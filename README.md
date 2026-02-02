@@ -40,7 +40,10 @@ The script uses `hidapi` to monitor raw data reports from the USB device. It lis
 ---
 
 ## ⚙️ Configuration
+Device ID: If your specific model has a different Revision ID, you may need to run a HID enumeration script to verify the VENDOR_ID and PRODUCT_ID.
+
 Adjust tap speed sensitivity by modifying `TAP_THRESHOLD` in the script:
 ```python
 # Decrease for faster double-clicks, increase for more "relaxed" clicking
 TAP_THRESHOLD = 0.5
+
